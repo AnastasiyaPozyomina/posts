@@ -5,7 +5,6 @@ const initialState = {
   fetchedPosts: [],
 };
 
-
 //Pure Functions
 export const postsReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -13,7 +12,7 @@ export const postsReducer = (state = initialState, action) => {
       return {...state, posts: state.posts.concat ([action.payload])};
     //return {...state, posts:[...state.posts, action.payload] }
     case FETCH_POSTS:
-      return {...state, fetchedPosts:action.payload}
+      return {...state, fetchedPosts: action.payload};
     default:
       return state;
   }

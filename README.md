@@ -1,4 +1,4 @@
-<h2>React Redux</h2>
+<h2>React Redux + Saga</h2>
    <p>  &#10004; Создание приложения с нуля </p>
    <p>  &#10004; Работа с формами</p>
    <p>  &#10004; Загрузка данных с сервера</p>
@@ -24,8 +24,10 @@
 <li> формируем новый объект поста </li>
 <li>  очищаем поле input после submit </li>
 <li>  взаимодействие между компонентами формы и постов </li>
+</ul>
 
 Redux
+<ul>
 <li> установка redux </li>
 <li> подключение redux к проекту </li>
 <li> создаём store (createStore()) </li>
@@ -65,4 +67,21 @@ Redux
 <li>action для warning</li>
 <li>обработка ошибок с сервера try...catch</li>
 <li>фильтруем слова при вводе заголовка поста</li>
-   </ul
+   </ul>
+
+   Saga 
+<ul>
+<li> saga (side effects)
+<li> внедряем saga в проект
+<li> yarn add redux-saga
+<li> redux/sagas.js
+<li> импорт createSagaMiddleWare в index.js
+<li> привязываем watcher к saga - saga.run()
+<li> takeEvery() (эффект из saga)
+<li> sagaWorker()
+<li> put() (эффект из saga)
+<li> async ф-ция с fetch
+<li> call() (эффект из saga)
+<li> обработка ошибок в saga
+</ul>
+

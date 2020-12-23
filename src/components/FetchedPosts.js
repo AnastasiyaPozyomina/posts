@@ -1,7 +1,7 @@
 import React from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {fetchPosts} from '../redux/actions';
-import { Loader } from './Loader';
+import {Loader} from './Loader';
 import Post from './Post';
 
 export default () => {
@@ -10,7 +10,7 @@ export default () => {
   const loading = useSelector (state => state.app.loading);
 
   if (loading) {
-    return <Loader />
+    return <Loader />;
   }
 
   if (!posts.length) {

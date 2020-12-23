@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {createPost, showAlert} from '../redux/actions';
-import { Alert } from './Alert';
+import {Alert} from './Alert';
 
 class PostForm extends Component {
   constructor (props) {
@@ -44,7 +44,7 @@ class PostForm extends Component {
   render () {
     return (
       <form onSubmit={this.submitHandler}>
-       {this.props.alert && <Alert text={this.props.alert} />} 
+        {this.props.alert && <Alert text={this.props.alert} />}
 
         <div className="form-group">
           <label htmlFor="title">Заголовок поста</label>
@@ -69,6 +69,6 @@ const mapDispatchToProps = {
 };
 
 const mapStateToProps = state => ({
-  alert: state.app.alert
-})
+  alert: state.app.alert,
+});
 export default connect (mapStateToProps, mapDispatchToProps) (PostForm);
