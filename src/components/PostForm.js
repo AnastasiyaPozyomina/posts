@@ -30,6 +30,7 @@ class PostForm extends Component {
     this.setState ({title: ''});
   };
 
+  //универсальный обработчик для всех input в форме
   changeInputHandler = event => {
     event.persist ();
     this.setState (prev => ({
